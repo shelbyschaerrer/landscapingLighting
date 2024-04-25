@@ -1,0 +1,116 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+  }
+  
+  /*---- apply a natural box layout model to all elements -------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    color: $fontColor;
+}
+
+#headerWrapper {
+    background-color: #F2E3D5;
+    color: $secondaryColor;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem $gutter;
+    gap: 8px;
+    h1 {
+        margin: 0;
+        padding-left: 1rem;
+        font-size: 1.2rem;
+        font-weight: $normalWeight;
+        color: black;
+    }
+    a {
+        margin-left: auto;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+
+//swiper
+.swiper, .swiper img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+//border image things
+.allCards {
+    display: grid;
+    margin-bottom: 4rem;
+    section {
+        position: relative;
+        h2 {
+            text-align: center;
+            color: #4C591D;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        img:last-child {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+//customer testimonials
+.allTestimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
+    section {
+        padding: 7px;
+        border: 1px solid #eee;
+        place-items: center;
+        margin: 0.5rem;
+        img {
+            width: 100%;
+            height: auto;
+            clip-path: circle(50% at 50% 50%);
+            transition: transform 1s;
+            &:hover {
+                transform: rotate(10deg);
+            }
+        }
+        p{
+           color: black; 
+        }
+    }
+}
+
+// begin the footer
+
+#footerWrapper {
+    background-color: #4C591D;
+}
+
+footer {
+    padding: .5rem $gutter;
+    p {
+        margin: 0;
+        text-align: center;
+        color: white;
+    }
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eden's Edge | Services</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Shelby Schaerrer's Start File">
+    <meta name="author" content="Shelby Schaerrer">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Fav Icon stuff below-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo1x.png" alt="My Logo" width="75" height="36" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
+            <h1>Eden's Edge Landscaping</h1>
+            <a href="tel:7685559785">(768) 555-9785</a>
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav>
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li class="active parent"><a href="#">All Services</a>
+                    <ul>
+                        <li class="active"><a href="#">General</a>
+                        <li class="active"><a href="#">Seasonal</a>
+                        <li class="active"><a href="#">Trees</a> 
+                    </ul>
+                </li>
+                <li><a href="#">Quotes</a></li>
+                <li><a href="#">Gallery</a>
+                <li><a href="#">Blog</a>
+                <li class="parent"><a href="#">Contact Us</a>
+                    <ul>
+                        <li class="active"><a href="#">Orem Location</a>
+                        <li class="active"><a href="#">Provo Location</a>
+                        <li class="active"><a href="#">Springville Location</a> 
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/small01.webp" media="(max-width: 746px)">
+                        <source srcset="images/medium01.webp" media="(max-width: 1172px)">
+                        <source srcset="images/large01.webp" media="(max-width: 1600px)">
+                        <img src="images/large01.webp" alt="Trimming a hedge" width="1600" height="500">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/small02.webp" media="(max-width: 746px)">
+                        <source srcset="images/medium02.webp" media="(max-width: 1172px)">
+                        <source srcset="images/large02.webp" media="(max-width: 1600px)">
+                        <img src="images/large02.webp" alt="Trimming a hedge" width="1600" height="500">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/small03.webp" media="(max-width: 746px)">
+                        <source srcset="images/medium03.webp" media="(max-width: 1172px)">
+                        <source srcset="images/large03.webp" media="(max-width: 1600px)">
+                        <img src="images/large03.webp" alt="Trimming a hedge" width="1600" height="500">
+                    </picture>
+                </div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <h1>All Services</h1>
+            <div class="allCards">
+                <section>
+                    <h2>General Yard Care</h2>
+                    <img src="images/generalCare.webp" alt="Yard" width="400" height="250">
+                    <img src="images/scallop.svg" width="400" height="250">
+                </section>
+                <section>
+                    <h2>Seasonal Care</h2>
+                    <img src="images/seasonalCare.webp" alt="Yard" width="400" height="250">
+                    <img src="images/scallop.svg" width="400" height="250">
+                </section>
+                <section>
+                    <h2>Tree Services</h2>
+                    <img src="images/treeCare.webp" alt="Yard" width="400" height="250">
+                    <img src="images/flowers.png" width="400" height="250">
+                </section>
+                <section>
+                    <h2>Hedge Trimming</h2>
+                    <img src="images/hedgeCare.webp" alt="Yard" width="400" height="250">
+                    <img src="images/foxTails.png" width="400" height="250">
+                </section>
+            </div>
+
+
+            <h1>Testimonials</h1>
+            <div class="allTestimonials">
+                <section>
+                    <img src="images/customer1.webp" width="200" height="200" alt="Customer Image">
+                    <p>I couldn't be happier with the wonderful work Eden's Edge Landscaping did for me. As I've gotten older, maintaining my yard became more challenging, but their team stepped in and transformed it into a beautiful, manageable space. Now, I can enjoy my garden again without the stress. Thank you so much!<br><br>Margaret Johnson</p>
+                </section>
+                <section>
+                    <img src="images/customer2.webp" width="200" height="200" alt="Customer Image">
+                    <p>I recently hired Eden's Edge Landscaping to overhaul my backyard, and I'm beyond impressed with the results. From the initial consultation to the final touches, their professionalism and attention to detail were outstanding. I highly recommend their services to anyone looking to enhance their home.<br><br>Ryan Taylor</p>
+                </section>
+            </div>
+
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <p>&copy; <span id="year">x</span> &bull; Shelby Schaerrer</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
